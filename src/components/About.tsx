@@ -1,5 +1,3 @@
-import Lottie from "lottie-react";
-import logoAnimation from "../assets/animations/heroAnimation.json";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -47,9 +45,7 @@ const About = () => {
             damping: 10,
           }}
           className="py-2"
-        >
-          <Lottie animationData={logoAnimation} />
-        </motion.div>
+        ></motion.div>
       </div>
     </section>
   );

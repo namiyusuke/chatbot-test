@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ChatInput from "./ChatInput";
 import { getMessagesForChatRoom } from "../utils/chatServices";
 import { useAuth } from "../context/AuthContextProvider";
+import { Message } from "../types/types";
 type chartArea = {
   selectedChatRoomId: number | null;
 };

@@ -3,9 +3,10 @@ import { useState } from "react";
 import { sendMessage, sendMessageFromGPT } from "../utils/chatServices";
 import { Message } from "../types/types";
 type ChatInputProps = {
-  selectedChatRoomId: number | null;
-  setMessages: React.Dispatch<React.SetStateAction<Message[] | null>>;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  selectedChatRoomId: number | null;
+  messages: Message[] | null;
+  setMessages: React.Dispatch<React.SetStateAction<Message[] | null>>;
 };
 function ChatInput({ selectedChatRoomId, setMessages, setIsLoading }: ChatInputProps) {
   const { user } = useAuth();

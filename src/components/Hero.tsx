@@ -1,5 +1,3 @@
-import Lottie from "lottie-react";
-import logoAnimation from "../assets/animations/heroAnimation.json";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -31,9 +29,7 @@ const Hero = () => {
               damping: 10,
             }}
             className="md:w-[440px] mx-auto"
-          >
-            <Lottie animationData={logoAnimation} />
-          </motion.div>
+          ></motion.div>
         </div>
       </main>
     </div>
