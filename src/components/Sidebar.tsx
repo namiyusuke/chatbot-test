@@ -13,7 +13,7 @@ function Sidebar({ chatRooms, setSelectedChatRoomId, selectedChatRoomId, setChat
     setSelectedChatRoomId(id);
   };
   const handleCreateChatRoom = async () => {
-    const chartRoomName = window.prompt("Enter the name of the chat room");
+    const chartRoomName = window.prompt("チャットルームの名前を入力してください");
     if (chartRoomName && user?.id) {
       try {
         const newRoom = await createChatRoomForUser(user?.id, chartRoomName);
