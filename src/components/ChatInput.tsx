@@ -8,7 +8,7 @@ type ChatInputProps = {
   messages: Message[] | null;
   setMessages: React.Dispatch<React.SetStateAction<Message[] | null>>;
 };
-function ChatInput({ selectedChatRoomId, setMessages, setIsLoading }: ChatInputProps) {
+function ChatInput({ selectedChatRoomId, messages, setMessages, setIsLoading }: ChatInputProps) {
   const { user } = useAuth();
   const [inputMessage, setInputMessage] = useState("");
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
